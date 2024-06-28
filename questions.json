@@ -1,0 +1,38 @@
+{
+    "html": [
+        {"question": "What does HTML stand for?", "choices": ["Hyper Text Preprocessor", "Hyper Text Markup Language", "Hyper Text Multiple Language", "Hyper Tool Multi Language"], "answer": "Hyper Text Markup Language"},
+        {"question": "Who is making the Web standards?", "choices": ["Mozilla", "Google", "The World Wide Web Consortium", "Microsoft"], "answer": "The World Wide Web Consortium"},
+        {"question": "Choose the correct HTML element for the largest heading:", "choices": ["<h6>", "<heading>", "<h1>", "<head>"], "answer": "<h1>"},
+        {"question": "What is the correct HTML element for inserting a line break?", "choices": ["<lb>", "<break>", "<br>", "<hr>"], "answer": "<br>"},
+        {"question": "What is the correct HTML for adding a background color?", "choices": ["<body bg='yellow'>", "<body style='background-color:yellow;'>", "<background>yellow</background>", "<body background='yellow'>"], "answer": "<body style='background-color:yellow;'>"},
+        {"question": "Choose the correct HTML element to define important text", "choices": ["<strong>", "<important>", "<b>", "<i>"], "answer": "<strong>"},
+        {"question": "Choose the correct HTML element to define emphasized text", "choices": ["<i>", "<italic>", "<em>", "<e>"], "answer": "<em>"},
+        {"question": "Which character is used to indicate an end tag?", "choices": ["/", "<", ">", "*"], "answer": "/"},
+        {"question": "How can you make a numbered list?", "choices": ["<ol>", "<ul>", "<dl>", "<list>"], "answer": "<ol>"},
+        {"question": "How can you make a bulleted list?", "choices": ["<ul>", "<ol>", "<dl>", "<list>"], "answer": "<ul>"}
+    ],
+    "css": [
+        {"question": "What does CSS stand for?", "choices": ["Common Style Sheet", "Colorful Style Sheet", "Computer Style Sheet", "Cascading Style Sheet"], "answer": "Cascading Style Sheet"},
+        {"question": "What is the correct HTML for referring to an external style sheet?", "choices": ["<style src='mystyle.css'>", "<stylesheet>mystyle.css</stylesheet>", "<link rel='stylesheet' type='text/css' href='mystyle.css'>", "<style href='mystyle.css'>"], "answer": "<link rel='stylesheet' type='text/css' href='mystyle.css'>"},
+        {"question": "Where in an HTML document is the correct place to refer to an external style sheet?", "choices": ["In the <body> section", "In the <head> section", "At the end of the document", "In the <footer> section"], "answer": "In the <head> section"},
+        {"question": "Which HTML tag is used to define an internal style sheet?", "choices": ["<css>", "<style>", "<script>", "<link>"], "answer": "<style>"},
+        {"question": "Which is the correct CSS syntax?", "choices": ["{body:color=black;}", "body {color: black;}", "body:color=black;", "{body;color:black;}"], "answer": "body {color: black;}"},
+        {"question": "How do you insert a comment in a CSS file?", "choices": ["// this is a comment", "/* this is a comment */", "// this is a comment //", "' this is a comment"], "answer": "/* this is a comment */"},
+        {"question": "Which property is used to change the background color?", "choices": ["bgcolor", "color", "background-color", "background"], "answer": "background-color"},
+        {"question": "How do you add a background color for all <h1> elements?", "choices": ["h1 {background-color:#FFFFFF;}", "all.h1 {background-color:#FFFFFF;}", "h1.all {background-color:#FFFFFF;}", "h1 {bgcolor:#FFFFFF;}"], "answer": "h1 {background-color:#FFFFFF;}"},
+        {"question": "Which CSS property is used to change the text color of an element?", "choices": ["fgcolor", "color", "text-color", "font-color"], "answer": "color"},
+        {"question": "Which CSS property controls the text size?", "choices": ["text-size", "font-style", "text-style", "font-size"], "answer": "font-size"}
+    ],
+    "js": [
+        {"question": "What does JS stand for?", "choices": ["Java System", "Java Source", "JavaScript", "JustScript"], "answer": "JavaScript"},
+        {"question": "Inside which HTML element do we put the JavaScript?", "choices": ["<script>", "<js>", "<scripting>", "<javascript>"], "answer": "<script>"},
+        {"question": "Where is the correct place to insert a JavaScript?", "choices": ["Both the <head> section and the <body> section are correct", "The <head> section", "The <body> section", "The <footer> section"], "answer": "Both the <head> section and the <body> section are correct"},
+        {"question": "What is the correct syntax for referring to an external script called 'xxx.js'?", "choices": ["<script name='xxx.js'>", "<script href='xxx.js'>", "<script src='xxx.js'>", "<script file='xxx.js'>"], "answer": "<script src='xxx.js'>"},
+        {"question": "The external JavaScript file must contain the <script> tag.", "choices": ["True", "False"], "answer": "False"},
+        {"question": "How do you write 'Hello World' in an alert box?", "choices": ["msg('Hello World');", "alertBox('Hello World');", "alert('Hello World');", "msgBox('Hello World');"], "answer": "alert('Hello World');"},
+        {"question": "How do you create a function in JavaScript?", "choices": ["function = myFunction()", "function:myFunction()", "function myFunction()", "myFunction()"], "answer": "function myFunction()"},
+        {"question": "How do you call a function named 'myFunction'?", "choices": ["call function myFunction()", "call myFunction()", "myFunction()", "myFunction(call)"], "answer": "myFunction()"},
+        {"question": "How to write an IF statement in JavaScript?", "choices": ["if i = 5 then", "if i == 5 then", "if (i == 5)", "if i = 5"], "answer": "if (i == 5)"},
+        {"question": "How does a WHILE loop start?", "choices": ["while (i <= 10; i++)", "while i = 1 to 10", "while (i <= 10)", "while (i++)"], "answer": "while (i <= 10)"}
+    ]
+}

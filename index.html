@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Souleymane Dosso">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="setup">
+        <h1>Quiz App</h1>
+        <label for="category">Choose Category:</label>
+        <select id="category">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JavaScript</option>
+            <option value="all">All</option>
+        </select>
+        <label for="numQuestions">Number of Questions:</label>
+        <input type="number" id="numQuestions" min="5" max="25" value="10">
+        <button id="startBtn">Start Quiz</button>
+    </div>
+
+    <div class="container" id="quiz">
+        <div id="questionContainer"></div>
+        <button id="backBtn">Back</button>
+        <button id="nextBtn">Next</button>
+    </div>
+
+    <div class="container" id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
