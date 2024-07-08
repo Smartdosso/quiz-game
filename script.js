@@ -64,14 +64,33 @@ document.addEventListener("DOMContentLoaded", () => {
         return shuffled.slice(0, num);
     }
 
+    function escapeHTML(str) {
+        return str.replace(/[&<>"']/g, function (match) {
+            switch (match) {
+                case '&':
+                    return '&amp;';
+                case '<':
+                    return '&lt;';
+                case '>':
+                    return '&gt;';
+                case '"':
+                    return '&quot;';
+                case "'":
+                    return '&#39;';
+                default:
+                    return match;
+            }
+        });
+    }
+
     function displayQuestion() {
         const question = questions[currentQuestionIndex];
         const userAnswer = userAnswers[currentQuestionIndex];
         questionContainer.innerHTML = `
-            <div class="question">${question.question}</div>
+            <div class="question">${escapeHTML(question.question)}</div>
             <div class="choices">
                 ${question.choices.map((choice, index) => `
-                    <div class="choice ${userAnswer ? (choice === question.answer ? 'correct' : choice === userAnswer ? 'incorrect' : '') : ''}" data-choice="${choice}">${choice}</div>
+                    <div class="choice ${userAnswer ? (choice === question.answer ? 'correct' : choice === userAnswer ? 'incorrect' : '') : ''}" data-choice="${escapeHTML(choice)}">${escapeHTML(choice)}</div>
                 `).join("")}
             </div>
             ${!userAnswer ? '<button id="submitBtn">Submit</button>' : ''}
@@ -143,3 +162,4 @@ document.addEventListener("DOMContentLoaded", () => {
         userAnswers = [];
     }
 });
+
